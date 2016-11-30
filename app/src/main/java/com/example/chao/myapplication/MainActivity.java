@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
 
         tv.setBackgroundResource(R.drawable.red_circle);
 
-        CountDownTimer timer = new CountDownTimer(700,1000) {
+        CountDownTimer timer = new CountDownTimer(300,1000) {
             @Override
             public void onTick(long millisUntilFinished) {
 
