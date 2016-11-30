@@ -3,4 +3,4 @@
 
 ###1. Red circle to indicate the encrypted letter for one input letter.
 ![Alt text](screenshots/em1.png? =200x200)
-<img src="screenshots/em1.png" style="width: 200px; height:200px;"/>
+<img src="screenshots/em1.png" width="48">
