@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_rotors"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.chao.myapplication.ShowRotors">
+
+    <TextView
+        android:text="Middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="43dp"
+        android:layout_marginEnd="43dp"
+        android:id="@+id/textView3"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:id="@+id/set_left_rotor_down"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/left_rotor_indicator"
+        android:layout_alignLeft="@+id/set_left_rotor_up"
+        android:layout_alignStart="@+id/set_left_rotor_up"
+        android:onClick="setRotorBtnsOnClick"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:id="@+id/set_middle_rotor_down"
+        android:layout_alignTop="@+id/set_left_rotor_down"
+        android:layout_alignLeft="@+id/set_middle_rotor_up"
+        android:layout_alignStart="@+id/set_middle_rotor_up"
+        android:onClick="setRotorBtnsOnClick"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        android:id="@+id/set_middle_rotor_up"
+        android:layout_above="@+id/left_rotor_indicator"
+        android:layout_centerHorizontal="true"
+        android:onClick="setRotorBtnsOnClick"/>
+
+    <TextView
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/middle_rotor_indicator"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/left_rotor_indicator"
+        android:layout_alignBottom="@+id/left_rotor_indicator"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toLeftOf="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        android:id="@+id/set_left_rotor_up"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:onClick="setRotorBtnsOnClick"/>
+
+    <TextView
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/left_rotor_indicator"
+        android:textSize="30sp"
+        android:layout_below="@+id/set_left_rotor_up"
+        android:layout_alignRight="@+id/set_left_rotor_down"
+        android:layout_alignEnd="@+id/set_left_rotor_down"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_up_float"
+        android:id="@+id/set_right_rotor_up"
+        android:layout_alignTop="@+id/set_middle_rotor_up"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp"
+        android:onClick="setRotorBtnsOnClick"/>
+
+    <TextView
+        android:text="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_rotor_indicator"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/middle_rotor_indicator"
+        android:layout_alignBottom="@+id/middle_rotor_indicator"
+        android:layout_alignRight="@+id/set_right_rotor_up"
+        android:layout_alignEnd="@+id/set_right_rotor_up"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/arrow_down_float"
+        android:layout_alignTop="@+id/set_middle_rotor_down"
+        android:layout_alignLeft="@+id/set_right_rotor_up"
+        android:layout_alignStart="@+id/set_right_rotor_up"
+        android:id="@+id/set_right_rotor_down"
+        android:onClick="setRotorBtnsOnClick"/>
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_middle_rotor_down"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_marginTop="63dp"
+        android:id="@+id/submit_rotor_setting"
+        android:onClick="setRotorBtnsOnClick"/>
+</RelativeLayout>
